@@ -1,11 +1,11 @@
-﻿namespace MyWebApi.Models.Domain
+﻿namespace WebAPI_simple.Models.Domain
 {
-    public class Publishers
+    public class Publisher
     {
         public int Id { get; set; }
         public string Name { get; set; }
 
-        // 1 Publisher - nhiều Books
-        public ICollection<Books> Books { get; set; }
+        // Quan hệ 1-n với Book
+        public List<Book> Books { get; set; }
     }
 }
