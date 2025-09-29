@@ -6,6 +6,7 @@ namespace WebAPI_simple.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class BooksController : ControllerBase
     {
         private readonly IBookRepository _bookRepository;
@@ -51,3 +52,4 @@ namespace WebAPI_simple.Controllers
         }
     }
 }
+
